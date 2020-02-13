@@ -1,0 +1,19 @@
+
+# -- User-defined global aliases and functions below this line --
+
+# Aliases
+alias ll="ls -alFh --color"
+alias lla="ls -lFh --color"
+alias ls="ls --color"
+alias v="/usr/bin/vim ."
+
+# Functions
+function cd {
+  builtin cd "$@" && ls -alFh --color
+}
+
+# Prompt
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]${SITE_NAME}\[\033[01;00m\]:\[\033[01;33m\]\w\[\033[01;00m\] # '
+
+# Screen configuration
+stty rows 41 cols 143
