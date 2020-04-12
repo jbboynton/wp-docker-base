@@ -124,4 +124,4 @@ RUN set -eux; \
 
 WORKDIR /var/www/app
 
-CMD ['docker-entrypoint.sh']
+CMD ["docker-entrypoint.sh"]
